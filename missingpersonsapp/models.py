@@ -10,6 +10,7 @@ class Missing(models.Model):
     state = models.CharField(max_length=30)
     gender = models.CharField(max_length=30)
     race = models.CharField(max_length=30)
-    
+    case_link = models.CharField
+
     def __str__(self):
         return(self.First_Name + " " + self.Last_Name)

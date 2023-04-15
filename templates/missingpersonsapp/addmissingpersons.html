@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<body>
+    <h2>Missing Persons</h2>
+    {% for person in Missing %}
+    - {{ person.First_Name }} {{ person.Last_Name }}<br>
+    {% endfor %}
+    </body>
+{% endblock %}
